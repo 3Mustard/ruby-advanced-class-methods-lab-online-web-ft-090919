@@ -49,7 +49,8 @@ class Song
     sorted
   end 
   
-  def self.new_from_filename
+  def self.new_from_filename(artist_title)
+    
     
   end
 end
