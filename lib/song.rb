@@ -53,7 +53,7 @@ class Song
     split_format = artist_title.split(" - ")
     split_format[1].delete(".mp3")
     song = self.new 
-    song.name = split_format[1].slice()
+    song.name = split_format[1]
     song.artist_name = split_format[0]
     self.all << song 
     song 
