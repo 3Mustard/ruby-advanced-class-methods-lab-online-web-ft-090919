@@ -32,5 +32,6 @@ class Song
   
   def self.find_by_name(name)
     result = self.all.each {|song| song.name == name}
+    result
   end 
 end
