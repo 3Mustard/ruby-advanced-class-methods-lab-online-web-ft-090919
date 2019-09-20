@@ -66,6 +66,10 @@ class Song
     song.artist_name = new_file.artist_name
     song
   end 
+  
+  def self.destroy_all
+    
+  end 
 end
 
 
