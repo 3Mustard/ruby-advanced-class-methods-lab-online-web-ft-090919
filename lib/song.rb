@@ -48,6 +48,10 @@ class Song
     sorted = self.all.sort_by {|song| song.name}
     sorted
   end 
+  
+  def self.new_from_filename
+    
+  end
 end
 
 
