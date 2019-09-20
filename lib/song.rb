@@ -50,7 +50,7 @@ class Song
   end 
   
   def self.new_from_filename(artist_title)
-    split_format = artist_title.split(" - ") 
+    split_format = artist_title.split((/[\s,']/)) 
     song = self.new 
     song.name = split_format[1]
     song.artist_name = split_format[0]
