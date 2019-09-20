@@ -51,9 +51,10 @@ class Song
   
   def self.new_from_filename(artist_title)
     split_format = artist_title.split(" - ")
+    split_format[1].delete(".mp3")
     song = self.new 
-    song.name = song_name
-    song.artist_name = split_format[0].delete(".mp3")
+    song.name = split_format[1]
+    song.artist_name = split_format[0]
     self.all << song 
     song 
   end
