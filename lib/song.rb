@@ -43,6 +43,10 @@ class Song
       self.create_by_name(name)
     end 
   end 
+  
+  def self.alphabetical
+    
+  end 
 end
 
 
